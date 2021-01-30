@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class backJoon_7568 {
-	// µ¢Ä¡
+	// ë©ì¹˜
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
@@ -24,14 +24,14 @@ public class backJoon_7568 {
 			list.get(i).add(sc.nextInt());
 		}
 		
-		// Å°¿Í µ¢Ä¡°¡ ¸ğµÎ Å©¸é AÀÇ µ¢Ä¡°¡ BÀÇ µ¢Ä¡º¸´Ù ´õÅ©´Ù.
-		// ±×¿ÜÀÇ °æ¿ì¿¡´Â ±×·¸°Ô ¸»ÇÒ¼ö¾ø´Ù.
+		// í‚¤ì™€ ë©ì¹˜ê°€ ëª¨ë‘ í¬ë©´ Aì˜ ë©ì¹˜ê°€ Bì˜ ë©ì¹˜ë³´ë‹¤ ë”í¬ë‹¤.
+		// ê·¸ì™¸ì˜ ê²½ìš°ì—ëŠ” ê·¸ë ‡ê²Œ ë§í• ìˆ˜ì—†ë‹¤.
 
 		
 		for(int i=0;i<list.size();i++) {
 			
-			int a = list.get(i).get(0); // ¸ö¹«°Ô
-			int b = list.get(i).get(1); // Å° 
+			int a = list.get(i).get(0); // ëª¸ë¬´ê²Œ
+			int b = list.get(i).get(1); // í‚¤ 
 			
 			
 			for(int j=0;j<list.size();j++) { 
