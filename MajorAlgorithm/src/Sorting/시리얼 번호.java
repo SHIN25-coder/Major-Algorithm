@@ -8,7 +8,7 @@ public class backJoon_1432 {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// ½Ã¸®¾ó ¹øÈ£ 
+		// ì‹œë¦¬ì–¼ ë²ˆí˜¸ 
 		Scanner scanner = new Scanner(System.in);
 		int result = 0;
 		int num = scanner.nextInt();
@@ -36,20 +36,20 @@ public class backJoon_1432 {
 
 			public int compare(String[] o1, String[] o2) {
 				// TODO Auto-generated method stub
-				//±æÀÌ¸¦ ºñ±³ 
+				//ê¸¸ì´ë¥¼ ë¹„êµ 
 				if(Integer.compare(Integer.parseInt(o1[1]),Integer.parseInt(o2[1])) == 0) {
-					// ¼ıÀÚÀÇ ÇÕÀ» ºñ±³
+					// ìˆ«ìì˜ í•©ì„ ë¹„êµ
 					if(Integer.compare(Integer.parseInt(o1[2]),Integer.parseInt(o2[2])) == 0) {
-						//¼ıÀÚÀÇ ÇÕ°ú ±æÀÌ°¡ ÀüºÎ µ¿ÀÏÇÑ °æ¿ì, »çÀü¼øÀ¸·Î Á¤·Ä 
+						//ìˆ«ìì˜ í•©ê³¼ ê¸¸ì´ê°€ ì „ë¶€ ë™ì¼í•œ ê²½ìš°, ì‚¬ì „ìˆœìœ¼ë¡œ ì •ë ¬ 
 							return o1[0].compareTo(o2[0]);
 					}
 					else {
-						//¼ıÀÚÀÇ ÇÕÀÌ ´Ù¸¥ °æ¿ì, ¿À¸§Â÷¼ø Á¤·Ä 
+						//ìˆ«ìì˜ í•©ì´ ë‹¤ë¥¸ ê²½ìš°, ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬ 
 							return Integer.compare(Integer.parseInt(o1[2]),Integer.parseInt(o2[2]));
 					}
 				}
 				else {
-					//¿À¸§Â÷¼ø Á¤·Ä 
+					//ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬ 
 					return Integer.compare(Integer.parseInt(o1[1]),Integer.parseInt(o2[1]));
 				}
 			}
