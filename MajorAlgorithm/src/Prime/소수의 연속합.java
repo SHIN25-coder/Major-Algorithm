@@ -18,7 +18,7 @@ public class backJoon_1644 {
 			prime[i] = i;
 		}
 		
-		// ¿¡¶óÅä½ºÅ×³×½ºÀÇ Ã¼ 
+		// ì—ë¼í† ìŠ¤í…Œë„¤ìŠ¤ì˜ ì²´ 
 		for(int i=2;i<=N;i++) {
 			if(prime[i] == 0 ) continue;
 			for(int j=i+i;j<=N;j+=i) {
@@ -33,7 +33,7 @@ public class backJoon_1644 {
 			if(prime[i]!=0) { num++; prime2[num] = i;}
 		}
 		
-		// ¼Ò¼ö¸®½ºÆ® ¿Ï¼º 
+		// ì†Œìˆ˜ë¦¬ìŠ¤íŠ¸ ì™„ì„± 
 		for(int i=num;i>0;i--) {
 			for(int j=i;j>=0;j--) {
 				
