@@ -9,8 +9,8 @@ public class backJoon_2606 {
 		// TODO Auto-generated method stub
 		Scanner s = new Scanner(System.in);
 		
-		int num = s.nextInt(); // ¹øÈ£ 
-		int pare = s.nextInt(); // ½Ö 
+		int num = s.nextInt(); // ë²ˆí˜¸ 
+		int pare = s.nextInt(); // ìŒ 
 		
 
 		int[][] array = new int[pare][2];
@@ -38,9 +38,9 @@ public class backJoon_2606 {
                 list.add(array[i][1]);
 
 			}
-			//¿ª¹æÇâ...
+			//ì—­ë°©í–¥...
 			if(list.contains(array[i][1])) {
-				// ÀÌ ºÎºĞÀÌ ¹®Á¦´Ù..
+				// ì´ ë¶€ë¶„ì´ ë¬¸ì œë‹¤..
 				list.add(array[i][0]);
 
 			}
