@@ -10,8 +10,8 @@ public class backJoon_1629 {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		
-		long A = sc.nextLong(); // นุ
-		long B = sc.nextLong(); // ม๖ผ๖
+		long A = sc.nextLong(); // ยนร
+		long B = sc.nextLong(); // รรถยผรถ
 		C = sc.nextLong();
 		
 	
