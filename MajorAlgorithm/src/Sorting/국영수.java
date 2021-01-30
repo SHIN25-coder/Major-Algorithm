@@ -7,10 +7,10 @@ import java.util.Scanner;
 public class backJoon_10825 {
 	
 	/*
-	 * ±¹¾î Á¡¼ö°¡ °¨¼ÒÇÏ´Â ¼ø¼­·Î
-	 * ±¹¾î Á¡¼ö°¡ °°À¸¸é ¿µ¾î Á¡¼ö°¡ Áõ°¡ÇÏ´Â ¼ø¼­·Î 
-	 * ±¹¾î Á¡¼ö¿Í ¿µ¾î Á¡¼ö°¡ °°À¸¸é ¼öÇĞ Á¡¼ö°¡ °¨¼ÒÇÏ´Â ¼ø¼­·Î
-	 * ¸ğµç Á¡¼ö°¡ °°À¸¸é ÀÌ¸§ÀÌ »çÀü ¼øÀ¸·Î Áõ°¡ÇÏ´Â ¼ø¼­·Î 
+	 * êµ­ì–´ ì ìˆ˜ê°€ ê°ì†Œí•˜ëŠ” ìˆœì„œë¡œ
+	 * êµ­ì–´ ì ìˆ˜ê°€ ê°™ìœ¼ë©´ ì˜ì–´ ì ìˆ˜ê°€ ì¦ê°€í•˜ëŠ” ìˆœì„œë¡œ 
+	 * êµ­ì–´ ì ìˆ˜ì™€ ì˜ì–´ ì ìˆ˜ê°€ ê°™ìœ¼ë©´ ìˆ˜í•™ ì ìˆ˜ê°€ ê°ì†Œí•˜ëŠ” ìˆœì„œë¡œ
+	 * ëª¨ë“  ì ìˆ˜ê°€ ê°™ìœ¼ë©´ ì´ë¦„ì´ ì‚¬ì „ ìˆœìœ¼ë¡œ ì¦ê°€í•˜ëŠ” ìˆœì„œë¡œ 
 	*/
 
 	public static void main(String[] args) {
@@ -21,16 +21,16 @@ public class backJoon_10825 {
 		
 		for(int i=0;i<array.length;i++) {
 			array[i][0] = scan.next();
-			array[i][1] = scan.next(); // ±¹¾îÁ¡¼ö
-			array[i][2] = scan.next(); // ¿µ¾îÁ¡¼ö
-			array[i][3] = scan.next(); // ¼öÇĞÁ¡¼ö
+			array[i][1] = scan.next(); // êµ­ì–´ì ìˆ˜
+			array[i][2] = scan.next(); // ì˜ì–´ì ìˆ˜
+			array[i][3] = scan.next(); // ìˆ˜í•™ì ìˆ˜
  		}
 		
-		// 2Â÷¿ø ¹è¿­ÀÌ¶ó¸é ÇØ´ç ÇÔ¼ö·Î ºñ±³ 
+		// 2ì°¨ì› ë°°ì—´ì´ë¼ë©´ í•´ë‹¹ í•¨ìˆ˜ë¡œ ë¹„êµ 
 		Arrays.sort(array,new Comparator<String[]>() {
-			// compareÇÔ¼ö¸¦ ¾î¶»°Ô Á¤ÀÇÇÏ´À³Ä¿¡ µû¶ó¼­ ´Ş¶óÁø´Ù. I
+			// compareí•¨ìˆ˜ë¥¼ ì–´ë–»ê²Œ ì •ì˜í•˜ëŠëƒì— ë”°ë¼ì„œ ë‹¬ë¼ì§„ë‹¤. I
 			public int compare(String[] o1,String[] o2) {
-				// 1. ±¹¾î Á¡¼ö°¡ °¨¼ÒÇÏ´Â ¼ø¼­
+				// 1. êµ­ì–´ ì ìˆ˜ê°€ ê°ì†Œí•˜ëŠ” ìˆœì„œ
 				if(Integer.compare(Integer.parseInt(o2[1]),Integer.parseInt(o1[1])) == 0) {
 					
 					if(Integer.compare(Integer.parseInt(o1[2]),Integer.parseInt(o2[2])) == 0 ) {
@@ -38,25 +38,25 @@ public class backJoon_10825 {
 						if(Integer.compare(Integer.parseInt(o2[3]),Integer.parseInt(o1[3])) == 0 ) {
 						
 							return o1[0].compareTo(o2[0]);
-							// ±¹¾î,¿µ¾î,¼öÇĞ Á¡¼ö°¡ °°Àº °æ¿ì , 
+							// êµ­ì–´,ì˜ì–´,ìˆ˜í•™ ì ìˆ˜ê°€ ê°™ì€ ê²½ìš° , 
 						
 						}
 						else {
 							
 							return Integer.compare(Integer.parseInt(o2[3]),Integer.parseInt(o1[3]));
-							// ±¹¾î,¿µ¾î°¡ °°Àº °æ¿ì , ³»¸²Â÷¼ø Á¤·Ä 
+							// êµ­ì–´,ì˜ì–´ê°€ ê°™ì€ ê²½ìš° , ë‚´ë¦¼ì°¨ìˆœ ì •ë ¬ 
 						}
 					}
 					else {
 						
 						return Integer.compare(Integer.parseInt(o1[2]),Integer.parseInt(o2[2]));
-						// ±¹¾î°¡ °°Àº °æ¿ì , ¿À¸§Â÷¼ø Á¤·Ä 
+						// êµ­ì–´ê°€ ê°™ì€ ê²½ìš° , ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬ 
 					}
 				}
 				
 				else {
 					return Integer.compare(Integer.parseInt(o2[1]),Integer.parseInt(o1[1]));
-					// ³»¸²Â÷¼ø Á¤·Ä 
+					// ë‚´ë¦¼ì°¨ìˆœ ì •ë ¬ 
 				}
 					
 			}
