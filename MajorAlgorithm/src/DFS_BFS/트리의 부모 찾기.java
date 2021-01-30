@@ -42,7 +42,7 @@ public class backJoon_11725{
 		if(!visited[x]) {
 			visited[x] = true; 
 
-		// Çö´ë ³ëµå¿Í ¿¬°áµÈ ´Ù¸¥ ³ëµå¸¦ Àç±ÍÀûÀ¸·Î ¹æ¹®
+		// í˜„ëŒ€ ë…¸ë“œì™€ ì—°ê²°ëœ ë‹¤ë¥¸ ë…¸ë“œë¥¼ ì¬ê·€ì ìœ¼ë¡œ ë°©ë¬¸
 			for(int i=0;i<graph.get(x).size();i++) {
 				int y = graph.get(x).get(i);
 				if(visited[y]) parents[x] = y;
