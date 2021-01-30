@@ -9,13 +9,13 @@ public class backJoon_2870 {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// ÆÄ½Ì¹®Á¦
+		// íŒŒì‹±ë¬¸ì œ
 		Scanner scanner = new Scanner(System.in);
 		int N = scanner.nextInt();
 		ArrayList<BigInteger> list = new ArrayList<BigInteger>();
 		String result = "";
 
-		// ¿¬¼ÓµÈ ¼ıÀÚ¸¸ ÇØ´ç °¡´É!
+		// ì—°ì†ëœ ìˆ«ìë§Œ í•´ë‹¹ ê°€ëŠ¥!
 		for(int i=0;i<N;i++) {
 			String s = scanner.next();
 			for(int j=0;j<s.length();j++) {
