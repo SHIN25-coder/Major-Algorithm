@@ -17,7 +17,7 @@ public class backJoon_1920 {
 			array[i] = sc.nextInt();
 		}
 		
-		// Á¤·Ä ÇÊ¼ö!
+		// ì •ë ¬ í•„ìˆ˜!
 		Arrays.sort(array);
 		
 		int M = sc.nextInt(); // target
@@ -46,11 +46,11 @@ public class backJoon_1920 {
 		while(start<=end) {
 			
 			int mid = (start+end)/2;
-			// Ã£Àº °æ¿ì Áß°£Á¡ ÀÎµ¦½º ¹İÈ¯
+			// ì°¾ì€ ê²½ìš° ì¤‘ê°„ì  ì¸ë±ìŠ¤ ë°˜í™˜
 			if(arr[mid]==target) return mid;
-			// Áß°£Á¡ÀÇ °ªº¸´Ù Ã£°íÀÚ ÇÏ´Â °ªÀÌ ÀÛÀº °æ¿ì ¿ŞÂÊ È®ÀÎ
+			// ì¤‘ê°„ì ì˜ ê°’ë³´ë‹¤ ì°¾ê³ ì í•˜ëŠ” ê°’ì´ ì‘ì€ ê²½ìš° ì™¼ìª½ í™•ì¸
 			else if(arr[mid]>target) end = mid-1;
-			// Áß°£Á¡ÀÇ °ªº¸´Ù Ã£°íÀÚ ÇÏ´Â °ªÀÌ Å« °æ¿ì ¿À¸¥ÂÊ È®ÀÎ 
+			// ì¤‘ê°„ì ì˜ ê°’ë³´ë‹¤ ì°¾ê³ ì í•˜ëŠ” ê°’ì´ í° ê²½ìš° ì˜¤ë¥¸ìª½ í™•ì¸ 
 			else start = mid+1;
 			
 		}
