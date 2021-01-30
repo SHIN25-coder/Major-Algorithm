@@ -12,7 +12,7 @@ public class backJoon_2231 {
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		int _count = 1;
 
-		//%,³ª¸ÓÁö
+		//%,Â³ÂªÂ¸Ã“ÃÃ¶
 		while(true) {
 			
 			int a = 0;
