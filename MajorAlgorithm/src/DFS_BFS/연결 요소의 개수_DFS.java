@@ -12,10 +12,10 @@ public class backJoon_11724_DFS {
 		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
 		
-		// ¹æÇâ ¾ø´Â ±×·¡ÇÁ°¡ ÁÖ¾îÁ³À»¶§ ¿¬°á ¿ä¼ÒÀÇ °³¼ö¸¦ ±¸ÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
+		// ë°©í–¥ ì—†ëŠ” ê·¸ë˜í”„ê°€ ì£¼ì–´ì¡Œì„ë•Œ ì—°ê²° ìš”ì†Œì˜ ê°œìˆ˜ë¥¼ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì‹œì˜¤.
 		
-		int N = scan.nextInt(); // Á¤Á¡ÀÇ °³¼ö
-		int M = scan.nextInt(); // °£¼±ÀÇ °³¼ö
+		int N = scan.nextInt(); // ì •ì ì˜ ê°œìˆ˜
+		int M = scan.nextInt(); // ê°„ì„ ì˜ ê°œìˆ˜
 		
 		int count = 0;
 		visited = new boolean[N+1];
@@ -24,7 +24,7 @@ public class backJoon_11724_DFS {
 			list.add(new ArrayList<Integer>());
 		}
 			
-		// ³ëµå»ğÀÔ
+		// ë…¸ë“œì‚½ì…
 		for(int i=1;i<M+1;i++) {
 			
 			int a = scan.nextInt();
