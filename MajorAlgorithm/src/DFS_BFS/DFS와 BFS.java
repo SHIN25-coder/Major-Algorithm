@@ -12,9 +12,9 @@ public class backJoon_1260 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		int N = sc.nextInt(); // Á¤Á¡ÀÇ °³¼ö
-		int M = sc.nextInt(); // °£¼±ÀÇ °³¼ö
-		int v = sc.nextInt(); // Å½»öÀ» ½ÃÀÛÇÒ Á¤Á¡ÀÇ ¹øÈ£
+		int N = sc.nextInt(); // ì •ì ì˜ ê°œìˆ˜
+		int M = sc.nextInt(); // ê°„ì„ ì˜ ê°œìˆ˜
+		int v = sc.nextInt(); // íƒìƒ‰ì„ ì‹œì‘í•  ì •ì ì˜ ë²ˆí˜¸
 		
 		dfsvisited = new boolean[N+1];
 		bfsvisited = new boolean[N+1];
@@ -23,7 +23,7 @@ public class backJoon_1260 {
 			list.add(new ArrayList<Integer>());
 		}
 		
-		// ³ëµå »ğÀÔ
+		// ë…¸ë“œ ì‚½ì…
 		for(int i=0;i<M;i++) {
 			int a = sc.nextInt();
 			int b = sc.nextInt();
